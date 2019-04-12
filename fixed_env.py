@@ -31,6 +31,7 @@ class Environment:
         if Debug:
             current_time = datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
             self.log_file = open(logfile_path + "log." + current_time, "w")
+            # self.log_file = open(logfile_path + "log", "w")
 
         self.video_size_file = VIDEO_SIZE_FILE
         self.Debug = Debug
